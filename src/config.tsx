@@ -10,6 +10,7 @@ import { ImPacman } from "react-icons/im";
 import { PageMap } from './pages/page_map';
 import { PageVelo } from './pages/page_velo';
 import { Icon } from "@iconify/react";
+import { PageSandbox } from './pages/sandbox';
 
 export const config:DashboardConfig = {
     // Le theme peux être personnalisé : https://ant.design/docs/react/customize-theme#seedtoken
@@ -67,11 +68,16 @@ export const config:DashboardConfig = {
           element:<PageMap />,
           icon:<HeatMapOutlined />
         },
-                {
+        {
           path:"velo",
           label:"Vélo",
           element:<PageVelo />,
           icon:<Icon icon="material-symbols:pedal-bike" />
+        },
+        {
+          path:"sandbox",
+          label:"Sandbox",
+          element: <PageSandbox />
         }
     ]
 }
